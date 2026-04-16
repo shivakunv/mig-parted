@@ -13,6 +13,7 @@
 # limitations under the License.
 
 FROM nvcr.io/nvidia/cuda:13.2.0-base-ubi8 as build
+ENV CGO_ENABLED=0
 
 SHELL ["/bin/bash", "-c"]
 
